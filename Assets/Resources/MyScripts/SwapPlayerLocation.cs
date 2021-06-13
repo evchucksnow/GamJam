@@ -38,7 +38,7 @@ public class SwapPlayerLocation : MonoBehaviour
         {
             a += Time.deltaTime;
         }
-        if (Input.GetKeyDown("q") && count < 1 && a > 0.25f) //make sure walking animation isn't playing.
+        if (Input.GetKeyDown("q") && count < 1 && a > 0.05f) //make sure walking animation isn't playing.
         {
             StartCoroutine(SwapPlaces());
             m_Anim.SetBool("isSwap", true);

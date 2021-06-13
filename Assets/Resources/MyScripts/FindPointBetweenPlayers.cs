@@ -41,6 +41,6 @@ public class FindPointBetweenPlayers : MonoBehaviour
         LMP_x = (hold1 + hold3) / 2; //woah crazy math
         LMP_y = (hold2 + hold4) / 2;
 
-        m_LocationMiddlePoint.position = new Vector2(LMP_x, LMP_y); //update the point
+        m_LocationMiddlePoint.position = new Vector2(LMP_x, LMP_y+2.0f); //update the point
     }
 }

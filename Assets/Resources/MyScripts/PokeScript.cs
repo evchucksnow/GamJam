@@ -15,7 +15,7 @@ public class PokeScript : MonoBehaviour
     {
         m_spriteRenderer = GetComponent<SpriteRenderer>();
         m_polygonCollider2D = gameObject.GetComponent<PolygonCollider2D>();
-        m_polygonCollider2D.enabled = !m_polygonCollider2D.enabled; //start with idle position PolygonCollider2D disabled
+        m_polygonCollider2D.enabled = false; //start with idle position PolygonCollider2D disabled
         m_Anim = GetComponent<Animator>();
 
     }
@@ -26,13 +26,13 @@ public class PokeScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             m_Anim.SetBool("isPoke", true);
-            m_polygonCollider2D.enabled = !m_polygonCollider2D.enabled; //toggle PolygonCollider2D
+            m_polygonCollider2D.enabled = true; //toggle PolygonCollider2D
 
         }
         if (Input.GetMouseButtonUp(0))
         {
             m_Anim.SetBool("isPoke", false);
-            m_polygonCollider2D.enabled = !m_polygonCollider2D.enabled; //toggle PolygonCollider2D
+            m_polygonCollider2D.enabled = false; //toggle PolygonCollider2D
         }
 
     }
