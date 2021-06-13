@@ -266,6 +266,7 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_Grounded: 0
   m_Anim: {fileID: 8745732291968076225}
 --- !u!58 &8745732291964342048
 CircleCollider2D:
@@ -295,7 +296,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.01
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
